@@ -1,3 +1,5 @@
+#-*- coding:utf-8 -*-
+#!/usr/bin/env python
 # Inspired by https://www.tensorflow.org/versions/r0.7/tutorials/word2vec/index.html
 import collections
 import numpy as np
@@ -13,7 +15,7 @@ batch_size = 20
 embedding_size = 2
 num_sampled = 15    # Number of negative examples to sample.
 
-# Sample sentences
+# 句子样例 Sample sentences
 sentences = ["the quick brown fox jumped over the lazy dog",
             "I love cats and dogs",
             "we all love cats and dogs",
@@ -27,14 +29,14 @@ sentences = ["the quick brown fox jumped over the lazy dog",
             "It's raining cats and dogs",
             "dogs and cats love sung"]
 
-# sentences to words and count
-words = " ".join(sentences).split()
-count = collections.Counter(words).most_common()
-print ("Word count", count[:5])
+# 处理句子 sentences to words and count
+words = " ".join(sentences).split()#句子分割
+count = collections.Counter(words).most_common()#统计
+print ("Word count", count[:5])# 出现数量最多的前5个单词
 
-# Build dictionaries
+# 建立字典 Build dictionaries
 rdic = [i[0] for i in count] #reverse dic, idx -> word
-dic = {w: i for i, w in enumerate(rdic)} #dic, word -> id
+dic = {w: i for i, w in enumerate(rdic)} #dic, word -> id#生成字典
 voc_size = len(dic)
 
 # Make indexed word data
@@ -89,17 +91,23 @@ nce_biases = tf.Variable(tf.zeros([voc_size]))
 # This does the magic:
 #   tf.nn.nce_loss(weights, biases, inputs, labels, num_sampled, num_classes ...)
 # It automatically draws negative samples when we evaluate the loss.
+## 代价函数
 loss = tf.reduce_mean(
   tf.nn.nce_loss(nce_weights, nce_biases, embed, train_labels,
                  num_sampled, voc_size))
 
-# Use the adam optimizer
+## 训练优化 Use the adam optimizer
 train_op = tf.train.AdamOptimizer(1e-1).minimize(loss)
 
-# Launch the graph in a session
+# 启动回话 Launch the graph in a session
 with tf.Session() as sess:
-    # Initializing all variables
-    tf.initialize_all_variables().run()
+    # tf.initialize_all_variables() no long valid from
+    # 2017-03-02 if using tensorflow >= 0.12
+    if int((tf.__version__).split('.')[1]) < 12 and int((tf.__version__).split('.')[0]) < 1:
+        init = tf.initialize_all_variables()
+    else:
+        init = tf.global_variables_initializer()
+    sess.run(init)
 
     for step in range(100):
         batch_inputs, batch_labels = generate_batch(batch_size)

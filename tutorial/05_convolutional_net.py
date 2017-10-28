@@ -56,11 +56,11 @@ mnist = input_data.read_data_sets("../minist/MNIST_data/", one_hot=True)
 # 训练数据 训练数据标签 测试数据  测试数据标签
 trX, trY, teX, teY = mnist.train.images, mnist.train.labels, mnist.test.images, mnist.test.labels
 # reshape成 卷积网络需要的 图片格式
-trX = trX.reshape(-1, 28, 28, 1)  # 28x28x1 input img
+trX = trX.reshape(-1, 28, 28, 1)  # 28x28x1 input img  -1表示原大小
 teX = teX.reshape(-1, 28, 28, 1)  # 28x28x1 input img
 
 ## 训练数据的 占位符
-X = tf.placeholder("float", [None, 28, 28, 1])
+X = tf.placeholder("float", [None, 28, 28, 1])#None输入图片的数量不定
 Y = tf.placeholder("float", [None, 10])
 
 ### 模型参数初始化 ####
@@ -108,6 +108,13 @@ with tf.Session() as sess:
         np.random.shuffle(test_indices)
         test_indices = test_indices[0:test_size]#测试数据
         #测试
+        #'''
+        print (np.argmax(teY[test_indices], axis=1))
+        print (sess.run(predict_op, feed_dict={X: teX[test_indices],
+                                                         Y: teY[test_indices],
+                                                         p_keep_conv: 1.0, ## 测试时关闭 dropout
+                                                         p_keep_hidden: 1.0}))
+       # '''
         print(i, np.mean(np.argmax(teY[test_indices], axis=1) ==
                          sess.run(predict_op, feed_dict={X: teX[test_indices],
                                                          Y: teY[test_indices],

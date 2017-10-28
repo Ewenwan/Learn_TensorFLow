@@ -1,6 +1,6 @@
 #-*- coding:utf-8 -*-
 #!/usr/bin/env python
-# 逻辑回归(仅有权重)即输出值不连续 
+# 手写字体 逻辑回归(仅有权重) 
 import tensorflow as tf
 import numpy as np
 from tensorflow.examples.tutorials.mnist import input_data   # 读取mnist手写字体数据工具

@@ -1,19 +1,70 @@
 
-机器学习分两大类，有监督学习(supervised learning)和无监督学习(unsupervised learning)。
-1.有监督学习又可分两类：分类（classification.）和回归（regression），
-  a.分类的任务就是把一个样本划为某个已知类别，每个样本的类别信息在训练时需要给定，
-      比如人脸识别、行为识别、目标检测等都属于分类。
-  b.回归的任务则是预测一个数值，比如给定房屋市场的数据（面积，位置等样本信息）来预测房价走势。
-2.而无监督学习也可以成两类：聚类（clustering）和密度估计（density estimation）,
-  a.聚类则是把一堆数据聚成弱干组，没有类别信息；
-  b.密度估计则是估计一堆数据的统计参数信息来描述数据,比如深度学习的RBM。
+1.矩阵操作
+1.1矩阵生成
 
-算法目录：
+这部分主要将如何生成矩阵，包括全０矩阵，全１矩阵，随机数矩阵，常数矩阵等
+【1】 tf.ones | tf.zeros
 
-一、k近邻  KNN
-    K近邻法是有监督学习方法，原理很简单，假设我们有一堆分好类的样本数据，
-    分好类表示每个样本都一个对应的已知类标签，当来一个测试样本要我们判断它的类别是，
-    就分别计算到每个样本的距离，然后选取离测试样本最近的前K个样本的标签累计投票，
-    得票数最多的那个标签就为测试样本的标签。
+tf.ones(shape,type=tf.float32,name=None)
+tf.zeros([2, 3], int32)
+用法类似，都是产生尺寸为shape的张量(tensor)
 
-二、
+
+sess = tf.InteractiveSession()
+x = tf.ones([2, 3], int32)
+print(sess.run(x))
+#[[1 1 1],
+# [1 1 1]]
+
+   
+
+【2】tf.ones_like | tf.zeros_like   按模型生成
+
+tf.ones_like(tensor,dype=None,name=None)
+tf.zeros_like(tensor,dype=None,name=None)
+新建一个与给定的tensor类型大小一致的tensor，其所有元素为1和0
+
+tensor=[[1, 2, 3], [4, 5, 6]] 
+x = tf.ones_like(tensor) 
+print(sess.run(x))
+#[[1 1 1],
+# [1 1 1]]
+
+  
+
+【3】tf.fill  填充
+
+tf.fill(shape,value,name=None)
+创建一个形状大小为shape的tensor，其初始值为value
+
+print(sess.run(tf.fill([2,3],2)))
+#[[2 2 2],
+# [2 2 2]]
+
+ 
+
+tf.constant
+
+tf.constant(value,dtype=None,shape=None,name=’Const’)
+创建一个常量tensor，按照给出value来赋值，可以用shape来指定其形状。value可以是一个数，也可以是一个list。
+如果是一个数，那么这个常亮中所有值的按该数来赋值。
+如果是list,那么len(value)一定要小于等于shape展开后的长度。赋值时，先将value中的值逐个存入。不够的部分，则全部存入value的最后一个值。
+
+a = tf.constant(2,shape=[2])
+b = tf.constant(2,shape=[2,2])
+c = tf.constant([1,2,3],shape=[6])
+d = tf.constant([1,2,3],shape=[3,2])
+
+sess = tf.InteractiveSession()
+print(sess.run(a))
+#[2 2]
+print(sess.run(b))
+#[[2 2]
+# [2 2]]
+print(sess.run(c))
+#[1 2 3 3 3 3]
+print(sess.run(d))
+#[[1 2]
+# [3 3]
+# [3 3]]
+

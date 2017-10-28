@@ -5,6 +5,7 @@
 # http://baijiahao.baidu.com/s?id=1579839249811513976&wfr=spider&for=pc
 import tensorflow as tf
 import numpy as np
+## 单一 LSTM网络
 #import input_data
 
 # configuration
@@ -45,11 +46,12 @@ def init_weights(shape):
 
 ## 模型 ##
 def model(X, W, B, lstm_size):
-    # X, input shape: (batch_size, time_step_size, input_vec_size)
-    XT = tf.transpose(X, [1, 0, 2])  # permute time_step_size and batch_size
+    # X, input shape: (batch_size, time_step_size, input_vec_size) 128 * 28 * 28
+    XT = tf.transpose(X, [1, 0, 2])  # 调换 0和1维度 转置 permute time_step_size and batch_size
     # XT shape: (time_step_size, batch_size, input_vec_size)
     XR = tf.reshape(XT, [-1, lstm_size]) # each row has input for each lstm cell (lstm_size=input_vec_size)
     # XR shape: (time_step_size * batch_size, input_vec_size)
+    # 分割每行 得到每个时刻的输入
     X_split = tf.split(0, time_step_size, XR) # split them to time_step_size (28 arrays)
     # Each array shape: (batch_size, input_vec_size)
 
