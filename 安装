@@ -6,6 +6,15 @@ $ sudo apt-get install python-pip python-dev
 linux 查看python安装路径,版本号
 安装路径：which python
 版本号:  python
+symple 
+pip install tensorflow==1.4.0
+pip install tensorflow-gpu==1.4.0
+
+
+pip3 install tensorflow==1.4.0
+pip3 install tensorflow-gpu==1.4.0
+
+
 
 python2.7 
 安装 0.8.0
