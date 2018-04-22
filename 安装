@@ -14,8 +14,6 @@ pip install tensorflow-gpu==1.4.0
 pip3 install tensorflow==1.4.0
 pip3 install tensorflow-gpu==1.4.0
 
-
-
 python2.7 
 安装 0.8.0
 # Ubuntu/Linux 64-bit, CPU only, Python 2.7:
@@ -28,7 +26,11 @@ $ sudo pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu
 
 python3.4
 # Ubuntu/Linux 64-bit, CPU only, Python 3.4:
+# 0.8版本
 $ sudo pip3 install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.8.0-cp34-cp34m-linux_x86_64.whl
+
+# 1.4版本
+sudo pip3 install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.4.0-cp34-cp34m-linux_x86_64.whl
 
 
 安装新 版本前需要卸载旧版本
