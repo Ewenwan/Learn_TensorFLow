@@ -33,8 +33,9 @@ $ sudo pip3 install --upgrade https://storage.googleapis.com/tensorflow/linux/cp
 # 1.4版本 cpu
 sudo pip3 install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.4.0-cp34-cp34m-linux_x86_64.whl
 # gpu
-sudo pip install --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-1.4.0-cp27-none-linux_x86_64.whl1
-
+#sudo pip3 install --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-1.4.0-cp34-cp34m-linux_x86_64.whl
+#PYTHON 3.4
+sudo pip3 install  --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.4.0-cp34-cp34m-linux_x86_64.whl
 
 安装新 版本前需要卸载旧版本
 
