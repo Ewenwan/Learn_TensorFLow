@@ -35,6 +35,8 @@
 * 8. [Recurrent Neural Network (LSTM)长短时记忆   单一 LSTM网络](tutorial/07_lstm.py)
   
   [长短时记忆   LSTM+RNN网络](tutorial/07_lstm2.py)
+  
+  [RNN网络识别手写字体](tutorial/07_lstm3.py)
 * 9. [Word2vec单词转词向量 英文](tutorial/08_word2vec.py)
   
   [单词转词向量 中文](tutorial/08_word2vec2.py)
