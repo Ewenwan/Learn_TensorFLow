@@ -36,6 +36,35 @@ WIFI指纹定位 分类问题
 
 [TensorFlow练习20: 使用深度学习破解字符验证码](http://blog.topspeedsnail.com/archives/10858)
 
+[TensorFlow练习21: 把Deep Dream应用到视频上](http://blog.topspeedsnail.com/archives/10880)
+
+[TensorFlow练习22: 手写汉字识别 行为分析数据库
+三维人脸数据库
+中文语言资源库
+步态数据库
+掌纹数据库
+虹膜库数据](http://blog.topspeedsnail.com/archives/10897)
+
+[TensorFlow练习23: “恶作剧” "人脸检测"](http://blog.topspeedsnail.com/archives/10931)
+
+[进化算法 改进并选出最优的 神经网络 玩躲飞机游戏](http://blog.topspeedsnail.com/archives/10952)
+
+[TensorFlow练习24: GANs-生成对抗网络 (生成明星脸)](http://blog.topspeedsnail.com/archives/10977)
+
+[TensorFlow练习25: 使用深度学习做阅读理解+完形填空](http://blog.topspeedsnail.com/archives/11062)
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
 []()
 
 []()
@@ -51,3 +80,4 @@ WIFI指纹定位 分类问题
 []()
 
 []()
+
