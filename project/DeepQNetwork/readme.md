@@ -317,7 +317,16 @@ def train_neural_network(input_image):
  
 train_neural_network(input_image)
 
+"""
+把事件处理那部分注释掉的代码用上，就不会代700多次未响应。
+写入文件错误，改成这样就行：
+saver.save(sess, ‘./game.cpk’, global_step = n)
 
+博主这一系列的帖子写得真好！！第１５１行随机选择action的概率应该是不断减小的，
+if(random.random() <= INITIAL_EPSILON) 应该改为　epsilon吧?
+
+
+"""
 ```
 
 如果你使用Linux，你可以使用htop监控内存使用情况。
