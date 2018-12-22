@@ -1,4 +1,9 @@
-# Learn TensorFlow
+# Learn TensorFlow 学习 实战
+
+[安装&简介](https://github.com/Ewenwan/MVision/tree/master/darknect/tensorflow)
+
+[tflearn 深度学习的库为TensorFlow提供一个更高级的API ](https://github.com/Ewenwan/tflearn)
+
 ***Topics***
 * 1. [Simple Multiplication两个数相乘 相加  ](tutorial/00_multiply.py) 
 * 2. [Linear Regression两维变量 线性回归](tutorial/01_linear_regression.py)
