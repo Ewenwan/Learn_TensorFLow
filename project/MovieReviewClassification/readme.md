@@ -209,5 +209,43 @@ def train_neural_network(X, Y):
  
 train_neural_network(X,Y)
 
+"""
+增加结点数量效果好了很多。
+n_layer_1 = 2000 # hide layer
+n_layer_2 = 2000 # hide layer(隐藏层)听着很神秘，其实就是除输入输出层外的中间层
 
+epochs = 10
+#config = tf.ConfigProto(log_device_placement=True)
+
+# config=tf.ConfigProto(log_device_placement=True)
+with tf.device(“/gpu:0”):
+with tf.Session() as session:
+session.run(tf.global_variables_initializer())
+epoch_loss = 0
+
+i = 0
+random.shuffle(train_dataset)
+train_x = dataset[:, 0]
+train_y = dataset[:, 1]
+for epoch in range(epochs):
+while i < len(train_x):
+start = i
+end = i + batch_size
+
+batch_x = train_x[start:end]
+batch_y = train_y[start:end]
+
+_, c = session.run([optimizer, cost_func], feed_dict={X: list(batch_x), Y: list(batch_y)})
+epoch_loss += c
+i += batch_size
+
+print(epoch, ' : ', epoch_loss)
+
+text_x = test_dataset[:, 0]
+text_y = test_dataset[:, 1]
+correct = tf.equal(tf.argmax(predict, 1), tf.argmax(Y, 1))
+accuracy = tf.reduce_mean(tf.cast(correct, 'float'))
+print('准确率: ', accuracy.eval({X: list(text_x), Y: list(text_y)}))
+"""
 ```
+
