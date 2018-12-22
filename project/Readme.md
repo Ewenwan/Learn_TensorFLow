@@ -53,9 +53,9 @@ WIFI指纹定位 分类问题
 
 [TensorFlow练习25: 使用深度学习做阅读理解+完形填空](http://blog.topspeedsnail.com/archives/11062)
 
-[]()
+[TensorFlow练习26: AI操盘手](http://blog.topspeedsnail.com/archives/11115)
 
-[]()
+[TensorFlow练习27: 验证码生成器-从文本生成图像](http://blog.topspeedsnail.com/archives/11150)
 
 []()
 
