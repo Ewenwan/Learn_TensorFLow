@@ -27,6 +27,10 @@
   [卷积神经网络 有偏置](tutorial/05_convolutional_net2.py)
   
   [tensorboard 显示优化记录](tutorial/05_convolutional_net3_board.py)
+  
+  [2层卷积 +relu+最大值池化](tutorial/05_convolutional_net4.py)
+  
+  [tflearn 封装接口实现](tutorial/05_convolutional_net5.py)
 * 7. [Denoising Autoencoder自编码 原理与PCA相似  单层 ](tutorial/06_autoencoder.py)
   
   [自编码 原理与PCA相似  两层](tutorial/06_autoencoder2.py)
