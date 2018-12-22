@@ -3,6 +3,8 @@
 
 [参考2](http://blog.topspeedsnail.com/archives/10399#more-10399)
 
+[大数据集训练](http://blog.topspeedsnail.com/archives/10420)
+
       这个任务主要是对电影评论文本进行情感分类，主要分为正面评论和负面评论，
       所以是一个二分类问题，二分类模型我们可以选取一些常见的模型比如贝叶斯、逻辑回归等，
       这里挑战之一是文本内容的向量化，
@@ -15,19 +17,34 @@
       这可以使用词汇表解决。
       可以使用 nltk
       
-      
+## 数据集
+[推特 (情绪分析)](http://help.sentiment140.com/for-students/ )
+
+	数据集包含1百60万条推特，包含消极、中性和积极tweet。不知道有没有现成的微博数据集。
+
+	数据格式：移除表情符号的CSV文件，字段如下：
+
+	0 – the polarity of the tweet (0 = negative, 2 = neutral, 4 = positive)
+	1 – the id of the tweet (2087)
+	2 – the date of the tweet (Sat May 16 23:58:44 UTC 2009)
+	3 – the query (lyx). If there is no query, then this value is NO_QUERY.
+	4 – the user that tweeted (robotickilldozr)
+	5 – the text of the tweet (Lyx is cool)
+	training.1600000.processed.noemoticon.csv（238M）
+	testdata.manual.2009.06.14.csv（74K）
+
       
 ## 使用nltk  
-安装nltk（自然语言工具库 Natural Language Toolkit）
-$ pip install nltk
-下载nltk数据：
-$ python
->>> import nltk
->>> nltk.download()
-测试nltk安装：
->>> from nltk.corpus import brown
->>> brown.words()
-['The', 'Fulton', 'County', 'Grand', 'Jury', 'said', ...]
+	安装nltk（自然语言工具库 Natural Language Toolkit）
+	$ pip install nltk
+	下载nltk数据：
+	$ python
+	>>> import nltk
+	>>> nltk.download()
+	测试nltk安装：
+	>>> from nltk.corpus import brown
+	>>> brown.words()
+	['The', 'Fulton', 'County', 'Grand', 'Jury', 'said', ...]
 
 > Python代码：
 ```python
