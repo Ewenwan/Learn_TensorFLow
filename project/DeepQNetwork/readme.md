@@ -221,7 +221,18 @@ def convolutional_neural_network(input_image):
  
 	output_layer = tf.matmul(fc4, weights['w_out']) + biases['b_out']
 	return output_layer
- 
+
+"""
+1、LEARNING_RATE并不是学习率，准确地定义是马尔科夫过程的奖励的衰减因子；
+2、卷积神经网络的返回张量predict_action英文字面意思是“预测动作”，
+   实际上其准确的定义应该是DQN里面的Q向量，（Q值=Q向量•action向量）；
+   
+3、cost函数的定义运用了马尔科夫过程里的贝尔曼公式(Qt-Rt-rQ（t+1)=0）
+   R表示当前奖励奖励，r表示衰减因子Qt代表当前的价值，
+   Q(t+1)代表下一状态的最大价值，cost函数就是计算贝尔曼公式的残差，
+   整个网络的优化方向就是使Q满足贝尔曼公式。
+   
+""" 
 # 深度强化学习入门: https://www.nervanasys.com/demystifying-deep-reinforcement-learning/
 # 训练神经网络
 def train_neural_network(input_image):
@@ -333,5 +344,18 @@ OpenAI Gym是一个为比较、构建强化学习Ai的一个Python库，它包�
 
 [OpenAI源代码](https://github.com/openai/gym)
 
+
+### 安装Gym
+
+	$ git clone https://github.com/openai/gym
+	$ cd gym
+
+	# 安装依赖
+	#$ brew install cmake boost boost-python sdl2 swig wget  # macOS python2
+	# brew install boost-python --with-python3 # python3
+	#$ sudo apt-get install -y python-numpy python-dev cmake zlib1g-dev libjpeg-dev xvfb libav-tools xorg-dev python-opengl libboost-all-dev libsdl2-dev swig  # Ubuntu
+	$ pip install gym[all]
+
+[Using Deep Q-Network to Learn How To Play Flappy Bird](https://github.com/Ewenwan/DeepLearningFlappyBird)
 
 
