@@ -11,62 +11,62 @@
 * 1. [Simple Multiplication两个数相乘 相加  ](tutorial/00_multiply.py) 
 * 2. [Linear Regression两维变量 线性回归](tutorial/01_linear_regression.py)
   
-  [三维变量 线性回归](tutorial/01_linear_regression3.py)
+     [三维变量 线性回归](tutorial/01_linear_regression3.py)
   
-  [三维变量线性回归 tensorboard 显示优化记录](tutorial/01_linear_regression3_graph.py)
+     [三维变量线性回归 tensorboard 显示优化记录](tutorial/01_linear_regression3_graph.py)
 * 3. [Logistic Regression 手写字体 逻辑回归(仅有权重)](tutorial/02_logistic_regression.py)
   
-  [手写字体 逻辑回归(权重+偏置)](tutorial/02_logistic_regression2.py)
+     [手写字体 逻辑回归(权重+偏置)](tutorial/02_logistic_regression2.py)
   
-  [tensorboard 显示优化记录](tutorial/02_logistic_regression2_tf_board_graph.py)
+     [tensorboard 显示优化记录](tutorial/02_logistic_regression2_tf_board_graph.py)
 * 4. [Feedforward Neural Network 多层感知机 无偏置](tutorial/03_net.py)
  
-  [多层感知机 有偏置](tutorial/03_net2.py)
+     [多层感知机 有偏置](tutorial/03_net2.py)
 * 5. [Deep Feedforward Neural Network多层网络 两层 隐含层无偏置](tutorial/04_modern_net.py)
   
-  [多层网络 两层 隐含层有偏置](tutorial/04_modern_net2.py)
+     [多层网络 两层 隐含层有偏置](tutorial/04_modern_net2.py)
 * 6. [Convolutional Neural Network卷积神经网络 无偏置](tutorial/05_convolutional_net.py)
   
-  [卷积神经网络 有偏置](tutorial/05_convolutional_net2.py)
+     [卷积神经网络 有偏置](tutorial/05_convolutional_net2.py)
   
-  [tensorboard 显示优化记录](tutorial/05_convolutional_net3_board.py)
+     [tensorboard 显示优化记录](tutorial/05_convolutional_net3_board.py)
   
-  [2层卷积 +relu+最大值池化](tutorial/05_convolutional_net4.py)
+     [2层卷积 +relu+最大值池化](tutorial/05_convolutional_net4.py)
   
-  [tflearn 封装接口实现](tutorial/05_convolutional_net5.py)
+     [tflearn 封装接口实现](tutorial/05_convolutional_net5.py)
   
-  [两层卷积神经网络训练手写数字识别 微信监控、调整训练过程](tutorial/05_convolutional_net6.py)
+     [两层卷积神经网络训练手写数字识别 微信监控、调整训练过程!!!!!!!!!!!!!!!!!](tutorial/05_convolutional_net6.py)
   
 * 7. [Denoising Autoencoder自编码 原理与PCA相似  单层 ](tutorial/06_autoencoder.py)
   
-  [自编码 原理与PCA相似  两层](tutorial/06_autoencoder2.py)
+     [自编码 原理与PCA相似  两层](tutorial/06_autoencoder2.py)
   
-  [自编码 原理与PCA相似  四层](tutorial/06_autoencoder3.py)
+     [自编码 原理与PCA相似  四层](tutorial/06_autoencoder3.py)
 * 8. [Recurrent Neural Network (LSTM)长短时记忆   单一 LSTM网络](tutorial/07_lstm.py)
   
-  [长短时记忆   LSTM+RNN网络](tutorial/07_lstm2.py)
+     [长短时记忆   LSTM+RNN网络](tutorial/07_lstm2.py)
   
-  [RNN网络识别手写字体](tutorial/07_lstm3.py)
+     [RNN网络识别手写字体](tutorial/07_lstm3.py)
 * 9. [Word2vec单词转词向量 英文](tutorial/08_word2vec.py)
   
-  [单词转词向量 中文](tutorial/08_word2vec2.py)
+     [单词转词向量 中文](tutorial/08_word2vec2.py)
 * 10. [TensorBoard tensorboard 显示优化记录专题](tutorial/09_tensorboard.py)
 * 11. [Save and restore net 保存和载入网络模型](tutorial/10_save_restore_net.py)
 
 * 12. 机器学习算法
-  [GBDT 梯度提升决策树](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/2_BasicModels/gradient_boosted_decision_tree.py)
+     [GBDT 梯度提升决策树](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/2_BasicModels/gradient_boosted_decision_tree.py)
   
-  [kmeans 聚类](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/2_BasicModels/kmeans.py)
+     [kmeans 聚类](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/2_BasicModels/kmeans.py)
   
-  [最近邻nn](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/2_BasicModels/nearest_neighbor.py)
+     [最近邻nn](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/2_BasicModels/nearest_neighbor.py)
   
-  [RF 随机森林](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/2_BasicModels/random_forest.py)
+     [RF 随机森林](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/2_BasicModels/random_forest.py)
   
 * 13. 生成网络 
-  [DCGAN 深度卷积 GAN ](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/dcgan.py)
+     [DCGAN 深度卷积 GAN ](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/dcgan.py)
 
 * 14. 多GPU训练
-  [多GPU CNN训练](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/6_MultiGPU/multigpu_cnn.py)
+     [多GPU CNN训练](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/6_MultiGPU/multigpu_cnn.py)
 
 ***Dependencies 依赖***
 * TensorFlow
