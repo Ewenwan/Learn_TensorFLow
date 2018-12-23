@@ -4,7 +4,10 @@
 
 [tflearn 深度学习的库为TensorFlow提供一个更高级的API ](https://github.com/Ewenwan/tflearn)
 
-***Topics***
+[参考](https://github.com/aymericdamien/TensorFlow-Examples)
+
+## 目录
+### tutorial 基础教程
 * 1. [Simple Multiplication两个数相乘 相加  ](tutorial/00_multiply.py) 
 * 2. [Linear Regression两维变量 线性回归](tutorial/01_linear_regression.py)
   
@@ -31,6 +34,9 @@
   [2层卷积 +relu+最大值池化](tutorial/05_convolutional_net4.py)
   
   [tflearn 封装接口实现](tutorial/05_convolutional_net5.py)
+  
+  [两层卷积神经网络训练手写数字识别 微信监控、调整训练过程](tutorial/05_convolutional_net6.py)
+  
 * 7. [Denoising Autoencoder自编码 原理与PCA相似  单层 ](tutorial/06_autoencoder.py)
   
   [自编码 原理与PCA相似  两层](tutorial/06_autoencoder2.py)
@@ -47,13 +53,28 @@
 * 10. [TensorBoard tensorboard 显示优化记录专题](tutorial/09_tensorboard.py)
 * 11. [Save and restore net 保存和载入网络模型](tutorial/10_save_restore_net.py)
 
+* 12. 机器学习算法
+  [GBDT 梯度提升决策树](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/2_BasicModels/gradient_boosted_decision_tree.py)
+  
+  [kmeans 聚类](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/2_BasicModels/kmeans.py)
+  
+  [最近邻nn](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/2_BasicModels/nearest_neighbor.py)
+  
+  [RF 随机森林](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/2_BasicModels/random_forest.py)
+  
+* 13. 生成网络 
+  [DCGAN 深度卷积 GAN ](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/dcgan.py)
+
+* 14. 多GPU训练
+  [多GPU CNN训练](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/6_MultiGPU/multigpu_cnn.py)
+
 ***Dependencies 依赖***
 * TensorFlow
 * Numpy
 * matplotlib
 
 
-## 项目 实战
+### 项目 实战
 
 [参考1](http://blog.topspeedsnail.com/archives/10399#more-10399)
 
