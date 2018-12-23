@@ -6,6 +6,7 @@
 微信监控、调整训练过程
 https://zhuanlan.zhihu.com/p/25597975?group_id=822180572054048768
 https://zhuanlan.zhihu.com/p/25670072
+https://github.com/QuantumLiu/wechat_callback/blob/master/wechat_utils.py
 '''
 
 from __future__ import print_function
