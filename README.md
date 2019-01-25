@@ -6,6 +6,8 @@
 
 [参考](https://github.com/aymericdamien/TensorFlow-Examples)
 
+[21个项目玩转深度学习———基于TensorFlow的实践详解](https://github.com/Ewenwan/Deep-Learning-21-Examples)
+
 ## 目录
 ### tutorial 基础教程
 * 1. [Simple Multiplication两个数相乘 相加  ](tutorial/00_multiply.py) 
