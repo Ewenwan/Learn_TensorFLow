@@ -1,4 +1,6 @@
 # Learn TensorFlow 学习 实战
+[
+21_items Tensorflow 实战Google深度学习框架源码 深度学习框架tensorflow  黄文坚-TF实战 ](https://github.com/xiaofengShi/Learning_resource/tree/master/TF)
 
 [安装&简介](https://github.com/Ewenwan/MVision/tree/master/darknect/tensorflow)
 
