@@ -7,6 +7,7 @@ DQN 游戏AI
 
 WIFI指纹定位 分类问题
 
+]自适应学习模型-应用于教育领域-知识图谱](https://github.com/Ewenwan/DKT-TensorFlow)
 
 [TensorFlow练习7: 基于RNN生成古诗词](http://blog.topspeedsnail.com/archives/10542)
 
